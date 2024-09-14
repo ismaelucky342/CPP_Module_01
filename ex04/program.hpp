@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   program.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 17:34:46 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/14 22:05:39 by ismherna         ###   ########.fr       */
+/*   Created: 2024/09/12 17:46:36 by ismherna          #+#    #+#             */
+/*   Updated: 2024/09/14 22:34:04 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef PROGRAM_HPP
+#define PROGRAM_HPP
 
-int	main(void){
+#include <string>
+#include <iostream>
+#include <unistd.h>
 
-	Zombie	*ary;
-	ary = zombieHorde (10, "Horde");
-	for (int i = 0; i < 10; i ++)
-		ary[i].announce();
-	delete [] ary;
-	return 0;
-}
+void	program(std::string filename, std::string s1, std::string s2);
+
+#endif
