@@ -3,31 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 17:47:04 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/14 22:07:13 by ismherna         ###   ########.fr       */
+/*   Updated: 2025/03/18 20:33:57 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
-# include <iostream>
-# include <string>
+#define ZOMBIE_HPP
+
+#include <string>
+#include <iostream>
 
 class Zombie {
-
 	private:
 		std::string _name;
 	public:
 		Zombie();
 		Zombie(std::string name);
+
 		~Zombie();
-		void	announce(void);
+		void announce( void );
 };
 
-Zombie*	newZombie(std::string name);
-void	randomChump(std::string name);
-Zombie* zombieHorde(int N, std::string name);
+Zombie* zombieHorde( int N, std::string name );
 
 #endif
