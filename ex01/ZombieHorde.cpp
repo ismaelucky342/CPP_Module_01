@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   ZombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 17:46:36 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/18 20:35:17 by ismherna         ###   ########.fr       */
+/*   Created: 2025/04/29 20:26:43 by ismherna          #+#    #+#             */
+/*   Updated: 2025/04/29 20:26:51 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-#include <string>
-#include <iostream>
 
 Zombie*	zombieHorde(int N, std::string name)
 {

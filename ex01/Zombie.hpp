@@ -5,29 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 17:47:04 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/18 20:33:57 by ismherna         ###   ########.fr       */
+/*   Created: 2025/04/29 20:28:02 by ismherna          #+#    #+#             */
+/*   Updated: 2025/04/29 20:28:25 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
 
-#include <string>
-#include <iostream>
+# define ZOMBIE_HPP
 
-class Zombie {
+# include <iostream>
+# include <algorithm>
+
+class	Zombie
+{
 	private:
-		std::string _name;
+		std::string	_name;
 	public:
-		Zombie();
 		Zombie(std::string name);
-
-		~Zombie();
-		void announce( void );
-		void set_name(std::string name);
+		Zombie(void);
+		~Zombie(void);
+		void	announce(void);
+		void	setName(std::string name);
 };
 
-Zombie* zombieHorde( int N, std::string name );
+Zombie	*newZombie(std::string name);
+
+void		randomChump(std::string name);
 
 #endif

@@ -5,29 +5,36 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 17:46:36 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/18 20:35:17 by ismherna         ###   ########.fr       */
+/*   Created: 2025/04/29 20:27:19 by ismherna          #+#    #+#             */
+/*   Updated: 2025/04/29 20:27:25 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie()
-{}
+Zombie::Zombie(std::string name)
+{
+	this->_name = name;
+	std::cout << "Zombie object " << this->_name << " created" << std::endl;
+}
+
+Zombie::Zombie(void)
+{
+	this->_name = "(null)";
+	std::cout << "Zombie object " << this->_name << " created" << std::endl;
+}
 
 Zombie::~Zombie()
 {
-	std::cout	<< _name << ": 💀"
-				<< std::endl;
+	std::cout << "Zombie object " << this->_name << " destroyed" << std::endl;
 }
 
-void	Zombie::set_name(std::string name)
+void	Zombie::announce()
 {
-	_name = name;
+	std::cout << this->_name << " BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void	Zombie::announce(void)
+void	Zombie::setName(std::string name)
 {
-	std::cout	<< _name << ": BraiiiiiiinnnzzzZ..."
-				<< std::endl;
+	this->_name = name;
 }

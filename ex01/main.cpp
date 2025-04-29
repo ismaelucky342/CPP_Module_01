@@ -5,20 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 17:34:46 by ismherna          #+#    #+#             */
-/*   Updated: 2025/03/18 20:34:19 by ismherna         ###   ########.fr       */
+/*   Created: 2025/04/29 20:25:58 by ismherna          #+#    #+#             */
+/*   Updated: 2025/04/29 20:26:03 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int main()
-{
-	int N = 5;
-	Zombie *horde = zombieHorde(N, "WordMy");
+Zombie*	zombieHorde(int N, std::string name);
 
-	for (int i = 0; i < N; ++i)
+int	main(void)
+{
+	int	size;
+
+	size = 20;
+	Zombie *horde = zombieHorde(size, "Zom");
+	for (int i = 0; i < size; i++)
 		horde[i].announce();
-	
-	delete[] horde;
+	delete [] horde;
 }
