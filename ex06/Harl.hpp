@@ -13,8 +13,12 @@
 #ifndef HARL_HPP
 #define HARL_HPP
 
+/*=================================INCLUDES=================================*/
+
 #include <iostream>
 #include <iomanip>
+
+/*=================================CLASS====================================*/
 
 class Harl
 {

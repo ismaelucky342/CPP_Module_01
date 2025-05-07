@@ -13,8 +13,12 @@
 #ifndef WEAPON_HPP
 #define WEAPON_HPP
 
+/*=================================INCLUDES=================================*/
+
 #include <string>
 #include <iostream>
+
+/*=================================CLASS====================================*/
 
 class Weapon
 {

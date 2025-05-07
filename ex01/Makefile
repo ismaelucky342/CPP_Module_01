@@ -1,8 +1,20 @@
-NAME		= violence
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/03/18 19:57:27 by ismherna          #+#    #+#              #
+#    Updated: 2025/03/18 19:58:03 by ismherna         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME		= Zombie
 CXX			= c++
 CXXFLAGS	= -std=c++98 -Wall -Wextra -Werror
 
-SRCS		= main.cpp Harl.cpp 
+SRCS		= main.cpp Zombie.cpp ZombieHorde.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 all: $(NAME)

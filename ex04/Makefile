@@ -1,8 +1,8 @@
-NAME		= harl
+NAME		= program
 CXX			= c++
 CXXFLAGS	= -std=c++98 -Wall -Wextra -Werror
 
-SRCS		= main.cpp Harl.cpp
+SRCS		= main.cpp program.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
 all: $(NAME)

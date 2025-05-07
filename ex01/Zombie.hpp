@@ -11,11 +11,14 @@
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
-
 # define ZOMBIE_HPP
+
+/*=================================INCLUDES=================================*/
 
 # include <iostream>
 # include <algorithm>
+
+/*=================================CLASS====================================*/
 
 class	Zombie
 {
@@ -29,8 +32,9 @@ class	Zombie
 		void	setName(std::string name);
 };
 
-Zombie	*newZombie(std::string name);
+/*=================================PROTOTYPES================================*/
 
+Zombie		*newZombie(std::string name);
 void		randomChump(std::string name);
 
 #endif

@@ -13,9 +13,13 @@
 #ifndef PROGRAM_HPP
 #define PROGRAM_HPP
 
+/*=================================INCLUDES=================================*/
+
 #include <string>
 #include <iostream>
 #include <unistd.h>
+
+/*=================================PROTOTYPE================================*/
 
 void	program(std::string filename, std::string s1, std::string s2);
 
