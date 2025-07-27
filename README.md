@@ -3,7 +3,7 @@
 
 ## Overview
 
-This module dives deep into **memory management** in C---
+This module dives deep into **memory management** in C++
 
 ## Learning Objectives
 
