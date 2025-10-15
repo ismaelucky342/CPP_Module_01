@@ -1,3 +1,4 @@
+<img width="921" height="223" alt="imagen" src="https://github.com/user-attachments/assets/67e0755f-5526-4f28-b8a7-e8055dba7155" />
 
 # CPP Module 01 - Memory Allocation, Pointers, References & File I/O
 
