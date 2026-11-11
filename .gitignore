@@ -1,0 +1,23 @@
+# Compiled objects and libraries
+*.o
+*.a
+*.so
+
+# Build executables
+/ex00/Zombie
+/ex01/Zombie
+/ex02/brain
+/ex03/violence
+/ex04/program
+/ex05/violence
+/ex06/violence
+*.out
+a.out
+
+# Local and crash-generated files
+.DS_Store
+*.swp
+*~
+core
+core.*
+vgcore.*
